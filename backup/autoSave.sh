@@ -8,6 +8,8 @@ SRCDIR=UwU                               # Source backup folder.
 DESDIR=backup                            # Destination of backup file.
 tar -cpzf $DESDIR/$FILENAME $SRCDIR
 echo Backup saved
+echo Backup size:
+du -sh $DESDIR/$FILENAME
 screen -r 8630 -X /save-on
 echo Auto-Save enabled
 echo Done
